@@ -1,0 +1,28 @@
+{
+  "name": "standard-credit-wealth",
+  "version": "1.0.0",
+  "description": "scw2026 website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamredg1/Standard-Credit-wealth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iamredg1/Standard-Credit-wealth/issues"
+  },
+  "homepage": "https://github.com/iamredg1/Standard-Credit-wealth#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.99.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.2"
+  }
+}

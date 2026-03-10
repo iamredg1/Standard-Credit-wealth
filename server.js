@@ -1,0 +1,15 @@
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 3000;
+app.use(cors());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/api/auth',     require('./src/routes/auth'));
+app.use('/api/members',  require('./src/routes/members'));
+app.use('/api/quiz',     require('./src/routes/quiz'));
+app.use('/api/webhooks', require('./src/routes/webhooks'));
+app.get('/api/health', (req, res) => res.json({ status: 'SCW Running', time: new Date().toISOString() }));
+app.listen(PORT, () => console.log(`SCW Backend running on port ${PORT}`));
