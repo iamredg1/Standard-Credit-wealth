@@ -3202,7 +3202,7 @@ async function loadLeaderboard() {
 }
 
 // ── AWARD XP WHEN QUIZ COMPLETES ──────────────────────────
-const _origShowResults = showResults;
+
 // Override quiz complete to also save to backend
 async function saveQuizToBackend(quizName, score, total, passed) {
   if (!SCW_TOKEN) return;
